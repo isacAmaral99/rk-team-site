@@ -10,7 +10,7 @@ export default function Component() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 
   const results = [
-    { name: "João", description: "Perdeu 15kg em 3 meses", image: "https://placehold.co/300x200" },
+    { name: "João Teste", description: "Perdeu 15kg em 3 meses", image: "https://placehold.co/300x200" },
     { name: "Maria", description: "Ganhou 5kg de massa muscular", image: "https://placehold.co/300x200" },
     { name: "Pedro", description: "Reduziu 8% de gordura corporal", image: "https://placehold.co/300x200" },
     { name: "Ana", description: "Melhorou condicionamento físico", image: "https://placehold.co/300x200" },
