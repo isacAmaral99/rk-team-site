@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['placeholder.com'], // adicione outros domínios de imagens se necessário
     remotePatterns: [
       {
         protocol: 'https',
@@ -9,8 +8,15 @@ const nextConfig = {
       },
     ],
   },
-  // Isso ajuda a resolver problemas com o routes-manifest
   output: 'standalone',
+  experimental: {
+    // Enable if you're using the App Router
+    appDir: true,
+  },
+  // This helps with the routes-manifest error
+  generateBuildId: async () => {
+    return 'build-id'
+  }
 }
 
 module.exports = nextConfig
